@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap");
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Fredoka', sans-serif;
+}
+
+header .video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  header .video {
+    width: auto;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
